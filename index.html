@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial TypeScript 1</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+    <header class="header-top">
+        <div class="container-fluid d-flex align-items-center">
+            
+            <img src="https://napolit.es/wp-content/uploads/2023/09/cropped-napolit_fav.jpg" alt="Logo" style="height: 50px; margin-right: 10px;">
+            <h1 class="titulo">TV series</h1>
+        </div>
+    </header>
+
+
+    <div class="container mt-4">
+        <div class="row">
+
+            <div class="col-md-6">
+                <div class="series-container">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Name</th>
+                                <th scope="col">Channel</th>
+                                <th scope="col">Seasons</th>
+                            </tr>
+                        </thead>
+                        <tbody id="series">
+                        </tbody>
+                    </table>
+                    <div id="average">                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div id="serie-detail" class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title" id="serie-title">¡Bienvenido a TV Series!</h5>
+                        <h6 class="card-subtitle mb-2 text-muted" id="serie-channel">En esta página podrás encontrar información sobre tus series favoritas</h6>
+                        <p class="card-text" id="serie-seasons">¡Dale click a una para empezar a leer!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="./scripts/serie.js"></script>
+    <script type="module" src="./scripts/data.js"></script>
+    <script type="module" src="./scripts/main.js"></script>
+
+</body>
+
+</html>
